@@ -1,0 +1,56 @@
+ ul { /* 取消ul預設的內縮及樣式 */ 
+
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+		width:100%;
+    }
+
+    ul.drop-down-menu {
+        border: #A9A9A9 2px solid;
+        display: inline-block;
+        font-family: 'Open Sans', 微軟正黑體, sans-serif;
+        font-size: 18pt;
+		
+		
+    }
+
+    ul.drop-down-menu li {
+        position: relative;
+        white-space: nowrap;
+        border-right: #A9A9A9 1px solid;    
+		
+    }
+
+    ul.drop-down-menu > li:last-child {
+        border-right: none;
+		
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+				width:24.9%;
+				text-align:center;
+				font-size: auto;
+
+    }  
+    
+     ul.drop-down-menu a {
+        background-color: #fff;
+        color: #333;
+        display: block;
+        padding: 0 30px;
+        text-decoration: none;
+        line-height: 40px;
+        
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        background-color: #ef5c28;
+        color: #fff;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        background-color: #ef5c28;
+        color: #fff;
+    }
+	
+	  
